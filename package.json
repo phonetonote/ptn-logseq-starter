@@ -1,0 +1,40 @@
+{
+  "name": "ptn-logseq-starter",
+  "version": "0.0.1",
+  "description": "get started making a logseq plugin",
+  "main": "dist/index.html",
+  "targets": {
+    "main": false
+  },
+  "default": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phonetonote/ptn-logseq-starter.git"
+  },
+  "author": "phonetonote",
+  "staticFiles": {
+    "staticPath": "./public"
+  },
+  "scripts": {
+    "dev": "parcel ./index.html --public-url ./",
+    "build": "parcel build --public-url . --no-source-maps index.html"
+  },
+  "license": "MIT",
+  "logseq": {
+    "id": "_ptn_logseq_starter"
+  },
+  "dependencies": {
+    "@logseq/libs": "^0.0.6",
+    "preact": "^10.6.6",
+    "preact-bulma": "^1.2.0-next.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  }
+}
