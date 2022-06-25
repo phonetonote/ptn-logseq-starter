@@ -18,10 +18,6 @@ function main(baseInfo: LSPluginBaseInfo) {
       logseq.showMainUI();
       console.log("ptn log --- showed main ui");
     },
-    // async loadPtnSqlite() {
-    //   writePageTitlesToSqlite();
-    //   listenForAllPageChanges();
-    // },
   });
 
   logseq.App.registerUIItem("toolbar", {
